@@ -19,7 +19,7 @@
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
-          <a class="logo-link link" href="index.html"
+          <a class="logo-link link logo-link-header" href="index.html"
             >WEB<span class="studio-header">STUDIO</span></a
           >
           <ul class="menu list">
@@ -36,12 +36,12 @@
         </nav>
         <address>
           <ul class="contacts list">
-            <li>
+            <li class="contact-link-li">
               <a class="contact-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li contact-link-li>
               <a class="contact-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -54,24 +54,19 @@
     <!--=================================== HERO ===================================-->
     <main>
       <section class="hero">
-        <div class="container">
-            <h1 class="main-title">
-              Effective Solutions <br />
-              for Your Business
-            </h1>
-            <!-- Перевірити дів для баттон -->
-            <button class="btn-order button container" type="button">
-              Order Service
-            </button>
-        </div>
+        <h1 class="main-title">
+          Effective Solutions <br />
+          for Your Business
+        </h1>
+        <button class="btn-order button" type="button">Order Service</button>
       </section>
 
       <!--=================================== FEATURES ===================================-->
 
-      <section>
+      <section class="features-section">
         <div class="container">
-          <h2 hidden>Features</h2>
-          <ul class="list">
+          <h2 class="hidden-title">Features</h2>
+          <ul class="features list">
             <li>
               <h3 class="suptitle">Strategy</h3>
               <p class="section-description-theme-light">
@@ -106,10 +101,10 @@
 
       <!--=================================== WE DOING ===================================-->
 
-      <section>
+      <section class="doing-section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
-          <ul class="list">
+          <ul class="list img-sites">
             <li>
               <img
                 src="images/img1.jpg"
@@ -142,43 +137,63 @@
 
       <section class="team">
         <div class="container">
-          <h2 class="section-title">Our Team</h2>
-          <ul class="list">
-            <li>
+          <h2 class="section-title team-title">Our Team</h2>
+          <ul class="team-cards list">
+            <li class="team-card">
               <img
                 src="images/team1.jpg"
                 alt="Product Designer - Mark Guerrero"
-                width="260"
+                width="264"
+                height="260"
               />
-              <h3 class="suptitle">Mark Guerrero</h3>
-              <p class="section-description-theme-light">Product Designer</p>
+              <div class="text-before-team-card">
+                <h3 class="suptitle team-name">Mark Guerrero</h3>
+                <p class="section-description-theme-light text-team">
+                  Product Designer
+                </p>
+              </div>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 src="images/team2.jpg"
                 alt="Frontend Developer - Tom Ford"
-                width="260"
+                width="264"
+                height="260"
               />
-              <h3 class="suptitle">Tom Ford</h3>
-              <p class="section-description-theme-light">Frontend Developer</p>
+              <div class="text-before-team-card">
+                <h3 class="suptitle team-name">Tom Ford</h3>
+                <p class="section-description-theme-light text-team">
+                  Frontend Developer
+                </p>
+              </div>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 src="images/team3.jpg"
                 alt="Marketing - Camila Garcia"
-                width="260"
+                width="264"
+                height="260"
               />
-              <h3 class="suptitle">Camila Garcia</h3>
-              <p class="section-description-theme-light">Marketing</p>
+              <div class="text-before-team-card">
+                <h3 class="suptitle team-name">Camila Garcia</h3>
+                <p class="section-description-theme-light text-team">
+                  Marketing
+                </p>
+              </div>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 src="images/team4.jpg"
                 alt="UI Designer - Daniel Wilson"
-                width="260"
+                width="264"
+                height="260"
               />
-              <h3 class="suptitle">Daniel Wilson</h3>
-              <p class="section-description-theme-light">UI Designer</p>
+              <div class="text-before-team-card">
+                <h3 class="suptitle team-name">Daniel Wilson</h3>
+                <p class="section-description-theme-light text-team">
+                  UI Designer
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -187,9 +202,9 @@
 
     <!--=================================== FOOTER ===================================-->
 
-    <footer class="footer container">
-      <div class="container">
-        <a class="logo-link link" href="index.html"
+    <footer class="footer">
+      <div class="container footer-container">
+        <a class="logo-link link logo-link-footer" href="index.html"
           ><span class="web">WEB</span
           ><span class="studio studio-footer">STUDIO</span></a
         >

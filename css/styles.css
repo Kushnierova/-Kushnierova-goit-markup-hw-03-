@@ -54,7 +54,7 @@ body {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px 120px 15px;
+
 }
 .hidden-title {
   position: absolute;
@@ -68,11 +68,15 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.section{
+    margin: 0 15px 120px 15px;
+}
 
 /* =================================== COMPONENTS ===================================*/
 
 .section-description-theme-dark {
   color: #e7e9fc;
+  margin-top: 16px;
   /* Used only in FOOTER */
 }
 .section-description-theme-light {
@@ -108,9 +112,7 @@ body {
 .logo-link-header {
   margin-right: 76px;
 }
-.logo-link-footer {
-  margin-bottom: 16px;
-}
+
 
 .studio-header {
   color: var(--accent-color);
@@ -169,6 +171,7 @@ address {
 
 .hero {
   background-color: var(--accent-color);
+  padding-bottom: 188px;
 }
 .main-title {
   font-weight: 700;
@@ -185,7 +188,6 @@ address {
   height: 56px;
   background: var(--btn-background-color);
   padding: 16px 32px;
-  /* margin-bottom: 188px; */
 
   display: flex;
   align-items: center;
@@ -199,6 +201,9 @@ address {
 /* =================================== FEATURES ===================================  */
 .features-section {
   background-color: var(--main-white);
+}
+.features-container{
+  margin-top: 120px;
 }
 .features {
   display: flex;
@@ -217,7 +222,7 @@ address {
 }
 /* =================================== /WE DOING ===================================*/
 /* =================================== TEAM ===================================*/
-.team {
+.team-section {
   background: var(--background-light-color);
 }
 .team-cards {
@@ -265,17 +270,22 @@ footer {
 
 /* =================================== PORTFOLIO===================================*/
 /* =================================== FILTER ===================================*/
-.container-filter {
+.filter-container {
   padding-top: 96px;
+  padding-bottom: 72px;
 }
 .btns-filter {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 24px;
 }
 .btn-filter {
   padding: 12px 24px;
   background: var(--background-light-color);
   border: 1px solid #e7e9fc;
+
   display: flex;
   align-items: center;
   text-align: center;
@@ -288,4 +298,28 @@ footer {
 }
 /* =================================== /FILTER ===================================*/
 /* =================================== CARDS ===================================*/
+.cards-link-works{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+}
+
+.card-link-example:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+.card-link-example:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 48px;
+}
+
+.text-card-exapmle{
+  background-color: var(--main-white);
+  border: 1px solid #E7E9FC;
+  border-top: nine;
+padding: 32px 0 32px 16px;
+}
+.text-cards{
+
+}
+
 /* =================================== /CARDS ===================================*/

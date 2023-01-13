@@ -54,7 +54,7 @@ body {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-
+  padding: 0 15px;
 }
 .hidden-title {
   position: absolute;
@@ -68,8 +68,8 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section{
-    margin: 0 15px 120px 15px;
+.section {
+  padding: 120px 0;
 }
 
 /* =================================== COMPONENTS ===================================*/
@@ -113,7 +113,6 @@ body {
   margin-right: 76px;
 }
 
-
 .studio-header {
   color: var(--accent-color);
 }
@@ -140,26 +139,23 @@ header {
 .menu {
   display: flex;
   align-items: center;
+   column-gap: 40px; 
 }
 .menu-link {
   font-weight: 500;
 }
-.menu-item:not(:last-child) {
-  margin-right: 40px;
-}
+
 address {
   margin-left: auto;
 }
 .contacts {
   display: flex;
   align-items: center;
+  column-gap: 40px;
 }
 .contact-link {
   font-style: normal;
   color: #434455;
-}
-.contact-link-li:not(:last-child) {
-  margin-right: 40px;
 }
 .menu-link:hover,
 .contact-link:hover {
@@ -171,7 +167,7 @@ address {
 
 .hero {
   background-color: var(--accent-color);
-  padding-bottom: 188px;
+  padding: 188px 0;
 }
 .main-title {
   font-weight: 700;
@@ -180,12 +176,9 @@ address {
   text-align: center;
   color: var(--main-white);
 
-  padding-top: 188px;
   margin-bottom: 48px;
 }
 .btn-order {
-  width: 169px;
-  height: 56px;
   background: var(--btn-background-color);
   padding: 16px 32px;
 
@@ -202,9 +195,7 @@ address {
 .features-section {
   background-color: var(--main-white);
 }
-.features-container{
-  margin-top: 120px;
-}
+
 .features {
   display: flex;
   align-items: center;
@@ -214,6 +205,7 @@ address {
 /* =================================== WE DOING ===================================*/
 .doing-section {
   background-color: var(--main-white);
+  padding-top: 0;
 }
 .img-sites {
   display: flex;
@@ -235,6 +227,7 @@ address {
 /* .team-card{
 flex-basis: calc((100%-3*24px)/4);
 } */
+
 /* Якщо я вираховую по формулі flex-basis в мене втікає остання картка на наступний рядок */
 
 /* .team-card:not(:nth-child(4n)) {
@@ -246,9 +239,6 @@ flex-basis: calc((100%-3*24px)/4);
 .text-before-team-card {
   background-color: var(--main-white);
   padding: 32px;
-}
-.team-title {
-  padding-top: 120px;
 }
 .team-name {
   text-align: center;
@@ -270,16 +260,17 @@ footer {
 
 /* =================================== PORTFOLIO===================================*/
 /* =================================== FILTER ===================================*/
-.filter-container {
-  padding-top: 96px;
-  padding-bottom: 72px;
+.filter-section {
+  padding-top: 96px ;
 }
 .btns-filter {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content:center;
-  gap: 24px;
+  justify-content: center;
+  column-gap: 24px;
+
+   margin-bottom: 72px; 
 }
 .btn-filter {
   padding: 12px 24px;
@@ -291,6 +282,7 @@ footer {
   text-align: center;
 
   color: var(--btn-background-color);
+
 }
 .btn-filter:hover {
   background: var(--focus-hover-color);
@@ -298,28 +290,28 @@ footer {
 }
 /* =================================== /FILTER ===================================*/
 /* =================================== CARDS ===================================*/
-.cards-link-works{
+
+.cards-link-works {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* gap: 24px; */
+row-gap: 48px;
+column-gap: 24px;
 }
 
-.card-link-example:not(:nth-child(3n)) {
+/* .card-link-example:not(:nth-child(3n)) {
   margin-right: 24px;
 }
 .card-link-example:not(:nth-last-child(-n + 3)) {
   margin-bottom: 48px;
-}
+} */
 
-.text-card-exapmle{
+.text-card-exapmle {
   background-color: var(--main-white);
-  border: 1px solid #E7E9FC;
-  border-top: nine;
-padding: 32px 0 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
 }
-.text-cards{
 
-}
 
 /* =================================== /CARDS ===================================*/

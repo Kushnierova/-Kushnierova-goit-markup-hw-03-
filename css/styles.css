@@ -139,7 +139,7 @@ header {
 .menu {
   display: flex;
   align-items: center;
-   column-gap: 40px; 
+  column-gap: 40px;
 }
 .menu-link {
   font-weight: 500;
@@ -221,7 +221,9 @@ address {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 24px;
+  /* row-gap вказаний на майбутнє, для випадку якщо додаватимуться ще елементи до списку */
 }
 
 /* .team-card{
@@ -253,7 +255,7 @@ footer {
   background-color: var(--accent-color);
 }
 .footer-container {
-  padding-top: 100px;
+  padding: 100px;
 }
 
 /* =================================== /FOOTER ===================================*/
@@ -261,7 +263,7 @@ footer {
 /* =================================== PORTFOLIO===================================*/
 /* =================================== FILTER ===================================*/
 .filter-section {
-  padding-top: 96px ;
+  padding-top: 96px;
 }
 .btns-filter {
   display: flex;
@@ -270,7 +272,7 @@ footer {
   justify-content: center;
   column-gap: 24px;
 
-   margin-bottom: 72px; 
+  margin-bottom: 72px;
 }
 .btn-filter {
   padding: 12px 24px;
@@ -282,7 +284,6 @@ footer {
   text-align: center;
 
   color: var(--btn-background-color);
-
 }
 .btn-filter:hover {
   background: var(--focus-hover-color);
@@ -295,8 +296,8 @@ footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-row-gap: 48px;
-column-gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 /* .card-link-example:not(:nth-child(3n)) {
@@ -312,6 +313,5 @@ column-gap: 24px;
   border-top: none;
   padding: 32px 16px;
 }
-
 
 /* =================================== /CARDS ===================================*/
